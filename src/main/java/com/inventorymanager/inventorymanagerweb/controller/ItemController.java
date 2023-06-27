@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@CrossOrigin(origins = "https://gentle-spire-03025-64f5727df745.herokuapp.com")
 @RestController
 @RequestMapping("/api/items")
 public class ItemController {

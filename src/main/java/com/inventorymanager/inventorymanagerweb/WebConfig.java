@@ -16,7 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
 @Override
 public void addCorsMappings(CorsRegistry registry) {
     registry.addMapping("/**")
-        .allowedOrigins("*") // change to this if you want to allow all origins, or ensure the correct origin is set
+        .allowedOrigins("https://gentle-spire-03025-64f5727df745.herokuapp.com") // change to this if you want to allow all origins, or ensure the correct origin is set
         .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
         .allowedHeaders("*")
         .exposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Credentials")
