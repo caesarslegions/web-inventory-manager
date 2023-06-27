@@ -13,14 +13,16 @@ import java.io.IOException;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("https://gentle-spire-03025-64f5727df745.herokuapp.com")
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
-                .allowedHeaders("*")
-                .allowCredentials(true);
-    }
+@Override
+public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")
+            .allowedOrigins("https://gentle-spire-03025-64f5727df745.herokuapp.com")
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
+            .allowedHeaders("*")
+            .exposedHeaders("Access-Control-Allow-Origin")
+            .allowCredentials(true);
+}
+
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
