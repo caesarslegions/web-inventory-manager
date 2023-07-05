@@ -58,6 +58,8 @@ POST request to `/api/items` with a body containing item details:
     "itemValue": 200.0
 }
 
+```
+
 **Create a new character**
 
 POST request to `/api/playercharacters` with a body containing item details:
@@ -69,3 +71,5 @@ POST request to `/api/playercharacters` with a body containing item details:
     "playerCharacterLevel": 10,
     "playerCharacterDescription": "A seasoned warrior from the North."
 }
+
+```
